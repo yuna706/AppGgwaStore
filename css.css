@@ -1,1 +1,53 @@
 /* 주조색 #ffe3a9 보조색 #7b5a2d 강조색 #b20109 */
+@font-face{
+    font-family: 'NanumSquareR';
+    src: url(NanumSquareR.ttf) format('truetype');
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'NanumSquareR';
+}
+ul, li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+hr{
+    background: #000;
+}
+
+/* 헤더 */
+header{
+    width: 100vw;
+    height: 8em;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(255,255,255,0.5);
+}
+header> .header_top{
+    height: 5em;
+    border-bottom: 1px solid #555;
+    display: flex;
+    justify-content: space-between;
+}
+h1{
+    width: 7em;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header> .header_top> h1> a{
+    width: 80%;
+    height: 80%;
+}
+header> .header_top> h1> a> img{
+    width: 100%;
+    height: 100%;
+}
+
