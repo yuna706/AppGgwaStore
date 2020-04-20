@@ -2,4 +2,4 @@
 
 <p>레이아웃 계획</p>
 <img src="index.jpg">
-<img src="scroll.jpg">
+<img src="ham.jpg">
