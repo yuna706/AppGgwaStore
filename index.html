@@ -4,30 +4,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>애꽈스토어</title>
+    
     <!-- cdn -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://kit.fontawesome.com/b77d45301a.js" crossorigin="anonymous"></script>
     
     <!-- link -->
     <script src="js.js"></script>
-    <script src="https://kit.fontawesome.com/b77d45301a.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css.css">
 </head>
 <body>
     <header>
-        <!--큰로고포함한섹션-->
-        <section id="sct1">
+        <section>
+            <!--큰로고포함한섹션-->
+            <div id="header_sct1">
+                <!--홍보네모칸-->
+                <div id="hongbo"></div>
 
-            <!--홍보네모칸-->
-            <div id="hongbo"></div>
+                <h1><a href="#"><img src="img/app_logo.png" alt="애꽈스토어 로고"></a></h1>
 
-            <!--로고-->
-            <div id="logo">
-                <img src="img/app_logo.png" alt="logo">
+                <div class="sct1-left">
+                    <!--미니메뉴-->
+                    <ul class="nav">
+                        <li>
+                            <a href="#">로그인</a>
+                        </li>
+                        <li>
+                            <a href="#">회원가입</a>
+                        </li>
+                        <li>
+                            <a href="#">마이페이지</a>
+                        </li>
+                        <li>
+                            <a href="#">장바구니</a>
+                        </li>
+                    </ul>
+
+                    <!--아이콘-->
+                    <div class="sns">
+                        <a href="#">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </div>
+                </div>
             </div>
+        </section>
 
-            <!--미니메뉴-->
-            <nav>
-                <ul>
+        <section>
+            <!--얇은고정섹션-->
+            <div id="header_sct2">
+
+                <h1><a href="#"><img src="img/app_logo.png" alt="애꽈스토어 로고"></a></h1>
+
+                <!--아이콘-->
+                <div class="sns">
+                    <a href="#">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    
+                    <a href="#">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+
+                <!--미니메뉴-->
+                <ul class="nav">
                     <li>
                         <a href="#">로그인</a>
                     </li>
@@ -41,97 +92,16 @@
                         <a href="#">장바구니</a>
                     </li>
                 </ul>
-            </nav>
-
-            <!--아이콘-->
-            <div id="icons">
-                <a href="#">
-                    <div>
-                        <i class="fab fa-facebook-f"></i>
-                    </div>
-                </a>
-                
-                <a href="#">
-                    <div>
-                        <i class="fab fa-instagram"></i>
-                    </div>
-                </a>
-
-                <a href="#">
-                    <div>
-                        <i class="fab fa-twitter"></i>
-                    </div>
-                </a>
             </div>
         </section>
 
-        <!--섹션1 아래밑줄-->
-        <hr id="mizzul">
-
-        <!--얇은고정섹션-->
-        <section id="sct2">
-
-            <!--로고-->
-            <div id="logo2">
-                <img src="img/app_logo.png" alt="logo">
-            </div>
-
-            <!--아이콘-->
-            <div id="icons2">
-                <a href="#">
-                    <div>
-                        <i class="fab fa-facebook-f"></i>
-                    </div>
-                </a>
-                
-                <a href="#">
-                    <div>
-                        <i class="fab fa-instagram"></i>
-                    </div>
-                </a>
-
-                <a href="#">
-                    <div>
-                        <i class="fab fa-twitter"></i>
-                    </div>
-                </a>
-            </div>
-
-            <!--미니메뉴-->
-            <nav>
-                <ul>
-                    <li>
-                        <a href="#">로그인</a>
-                    </li>
-                    <li>
-                        <a href="#">회원가입</a>
-                    </li>
-                    <li>
-                        <a href="#">마이페이지</a>
-                    </li>
-                    <li>
-                        <a href="#">장바구니</a>
-                    </li>
-                </ul>
-            </nav>
-
-        </section>
-
-        <!--섹션2 아래밑줄-->
-        <hr id="mizzul2">
-
-
-
+        <section>
         <!--상품메뉴-->
-        <section id="sct3">
-
-            <!--메뉴(햄버거)아이콘-->
-            <a href="#">
+        <div id="header_sct3">
+                <!--메뉴(햄버거)아이콘-->
                 <i class="fas fa-bars"></i>
-            </a>
 
-            <nav>
-                <ul>
+                <ul class="nav">
                     <li>
                         <a href="#">에코백</a>
                     </li>
@@ -154,10 +124,8 @@
                         <a href="#">디자인 제작 신청</a>
                     </li>
                 </ul>
-            </nav>
+            </div>
         </section>
-        <!--섹션3 아래밑줄-->
-        <hr id="mizzul3">
     </header>
 </body>
 </html>
