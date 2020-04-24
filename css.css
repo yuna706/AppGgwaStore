@@ -1,7 +1,7 @@
 /* 주조색 #ffe3a9 보조색 #7b5a2d 강조색 #b20109 */
 @font-face{
     font-family: 'NanumSquareR';
-    src: url(NanumSquareR.ttf) format('truetype');
+    src: url(font/NanumSquareR.ttf) format('truetype');
 }
 *{
     padding: 0;
@@ -19,10 +19,14 @@ a{
 hr{
     background: #000;
 }
-
+.five *{
+    color: #555;
+}
+.five *:hover{
+    color: #000;
+}
 
 /* 헤더 */
-
 header{
     height: 260px;
     background-color: #ffffff;
@@ -36,6 +40,27 @@ section> div{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+header .sns> a{
+    width: 40px;
+    height: 40px;
+    border-radius: 100px;
+    background-color: #F8E8CC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+}
+header .sns> a> i{
+    font-size: 1.5em;
+    color: #333;
+    transition: all 0.5s;
+}
+header .sns> a:hover{
+    background: #FFE1AC;
+}
+header .sns> a:hover> i{
+    color: #000;
 }
 
 /* -------섹션1 시작------- */
@@ -66,74 +91,63 @@ section> div{
 }
 
 /* 미니메뉴, sns 묶음 */
-.sct1-left{
+.sct1-right{
     width: 300px;
     height: 100%;
 }
 
 /* 미니 메뉴 */
-.sct1-left> .nav{
+.sct1-right> .nav{
     width: 100%;
     height: 50%;
     display: flex;
     justify-content: space-between;
-    margin-top: 20px;
+    padding-top: 20px;
 }
 
 /* 아이콘 */
-.sns{
+.sct1-right> .sns{
     width: 150px;
     height: 50%;
     display: flex;
     justify-content: space-between;
     float: right;
 }
-.sns> a{
-    width: 40px;
-    height: 40px;
-    border-radius: 100px;
-    background-color: #f8e9cc;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.sns> a> i{
-    font-size: 1.5em;
-}
 
 
 /* -------섹션2 시작------- */
 
-/* 섹션2 크기 */
-#header_sct2{
-    width: 100vh;
-    height: 50px;
+/* section2 로고, sns */
+#header_sct2> .sct2_left{
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
 }
 
-/* 섹션2 로고div */
-#header_sct2>#logo2{
-    display: block;
-    top: 5px;
-    left: 200px;
-    position: relative;
+/* 로고 */
+.sct2_left> h1{
+    width: 50%;
+}
+.sct2_left> h1 img{
+    width: 100%;
 }
 
-/* 섹션2 로고 */
-#header_sct2>#logo2>img{
-    width: 100px;
-    height: auto;
+/* sns */
+.sct2_left> .sns{
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 
-
-
-
-
-
-
-
-
-
+/* 미니메뉴 */
+#header_sct2> .nav{
+    width: 25%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
 /* -------섹션3 시작------- */
 
