@@ -4,88 +4,185 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>애꽈스토어</title>
+    
     <!-- cdn -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://kit.fontawesome.com/b77d45301a.js" crossorigin="anonymous"></script>
     
     <!-- link -->
     <script src="js.js"></script>
     <link rel="stylesheet" href="css.css">
 </head>
 <body>
-
-    <!-- 상단 고정 -->
     <header>
-        <div class="header_top">
-            <h1><a href="#"><img src="img/app_logo.png" alt="애꽈스토어 로고"></a></h1>
-            <ul>
-                <li><a href="#">로그인</a></li>
-                <li><a href="#">회원가입</a></li>
-                <li><a href="#">마이페이지</a></li>
-                <li><a href="#">장바구니</a></li>
-            </ul>
-        </div>
-        <div class="header_bt">
-            <ul class="nav">
-                <li>
-                    <ul class="menu_app">
-                        <li>애꽈스토어</li>
-                        <li><a href="#">에코백</a></li>
-                        <li><a href="#">티셔츠</a></li>
-                        <li><a href="#">미니 스티커</a></li>
-                        <li><a href="#">머그컵</a></li>
-                        <li><a href="#">디자인 제작 신청</a></li>
-                    </ul>
-                    <ul class="menu_cus">
-                        <li>커스터마이징</li>
-                        <li><a href="#">에코백</a></li>
-                        <li><a href="#">티셔츠</a></li>
-                        <li><a href="#">미니 스티커</a></li>
-                        <li><a href="#">머그컵</a></li>
-                        <li><a href="#">인화사진</a></li>
-                        <li><a href="#">포토카드</a></li>
-                    </ul>
-                </li>
-    
-                <hr>
-                <i class="fas fa-star"></i>
-    
-                <li><a href="#">공지사항</a></li>
-                <li><a href="#">리뷰</a></li>
-                <li><a href="#">교환/반품</a></li>
-                <li><a href="#">주문수정</a></li>
-            </ul>
-        </div>  
-    </header>
+        <section>
+            <!--큰로고포함한섹션-->
+            <div id="header_sct1">
+                <!--홍보네모칸-->
+                <div id="hongbo"></div>
 
-    <!-- 오른쪽 컨텐츠 -->
-    <section id="right">
-        <section class="slide">
-            <div class="img"><a href="#"><img src="img/slide1.jpg" alt="슬라이드 이미지"></a></div>
-            <div class="img"><a href="#"><img src="img/slide2.jpg" alt="슬라이드 이미지"></a></div>
-        </section>
-        <section class="contents cont_app">
-            <h2></h2>
-            <a href="#" class="box">
-                <div class="img_div"></div>
-                <div class="text_div">
-                    <h3></h3>
-                    <p></p>
+                <h1><a href="#"><img src="img/app_logo.png" alt="애꽈스토어 로고"></a></h1>
+
+                <div class="sct1-right">
+                    <!--미니메뉴-->
+                    <ul class="nav five">
+                        <li>
+                            <a href="#">로그인</a>
+                        </li>
+                        <li>
+                            <a href="#">회원가입</a>
+                        </li>
+                        <li>
+                            <a href="#">마이페이지</a>
+                        </li>
+                        <li>
+                            <a href="#">장바구니</a>
+                        </li>
+                    </ul>
+
+                    <!--아이콘-->
+                    <div class="sns">
+                        <a href="#">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </div>
                 </div>
-            </a>
+            </div>
         </section>
-        <section class="contents cont_cus">
-            <a href="#" class="box">
-                <div class="img_div"></div>
-                <div class="text_div">
-                    <h3></h3>
-                    <p></p>
+
+        <section>
+            <!--얇은고정섹션-->
+            <div id="header_sct2">
+
+                <div class="sct2_left">
+                    <h1><a href="#"><img src="img/app_logo.png" alt="애꽈스토어 로고"></a></h1>
+
+                    <!--아이콘-->
+                    <div class="sns">
+                        <a href="#">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </div>
                 </div>
-            </a>
+                <!--미니메뉴-->
+                <ul class="nav five">
+                    <li>
+                        <a href="#">로그인</a>
+                    </li>
+                    <li>
+                        <a href="#">회원가입</a>
+                    </li>
+                    <li>
+                        <a href="#">마이페이지</a>
+                    </li>
+                    <li>
+                        <a href="#">장바구니</a>
+                    </li>
+                </ul>
+            </div>
         </section>
-        <footer>
-            <div class="copy">&copy;애꽈스토어 [사업자 정보 추가바람]</div>
-            <button class="top">top</button>
-        </footer>    
-    </section>
+
+        <section>
+        <!--상품메뉴-->
+        <div id="header_sct3" class="five">
+                <!--메뉴(햄버거)아이콘-->
+                <i class="fas fa-bars"></i>
+
+                <ul class="nav">
+                    <li>
+                        <a href="#">에코백</a>
+                        <div class="img_div">
+                            <div class="idx1">
+                                <p>애꽈스토어</p>
+                                <img src="img/app_logo.png" alt="애꽈상품 대표">
+                            </div>
+                            <div class="idx2">
+                                <p>커스터마이징</p>
+                                <img src="img/app_logo.png" alt="애꽈상품 대표">
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">티셔츠</a>
+                        <div class="img_div">
+                            <div class="idx1">
+                                <p>애꽈스토어</p>
+                                <img src="img/app_logo.png" alt="애꽈상품 대표">
+                            </div>
+                            <div class="idx2">
+                                <p>커스터마이징</p>
+                                <img src="img/app_logo.png" alt="애꽈상품 대표">
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">머그컵</a>
+                        <div class="img_div">
+                            <div class="idx1">
+                                <p>애꽈스토어</p>
+                                <img src="img/app_logo.png" alt="애꽈상품 대표">
+                            </div>
+                            <div class="idx2">
+                                <p>커스터마이징</p>
+                                <img src="img/app_logo.png" alt="애꽈상품 대표">
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">미니스티커</a>
+                        <div class="img_div">
+                            <div class="idx1">
+                                <p>애꽈스토어</p>
+                                <img src="img/app_logo.png" alt="애꽈상품 대표">
+                            </div>
+                            <div class="idx2">
+                                <p>커스터마이징</p>
+                                <img src="img/app_logo.png" alt="애꽈상품 대표">
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">인화사진</a>
+                        <div class="img_div">
+                            <div class="idx2">
+                                <p>커스터마이징</p>
+                                <img src="img/app_logo.png" alt="애꽈상품 대표">
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">포토카드</a>
+                        <div class="img_div">
+                            <div class="idx2">
+                                <p>커스터마이징</p>
+                                <img src="img/app_logo.png" alt="애꽈상품 대표">
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">디자인 제작 신청</a>
+                        <div class="img_div">
+                            <div class="idx2">
+                                <p>커스터마이징</p>
+                                <img src="img/app_logo.png" alt="애꽈상품 대표">
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </header>
 </body>
 </html>

@@ -1,7 +1,7 @@
 /* 주조색 #ffe3a9 보조색 #7b5a2d 강조색 #b20109 */
 @font-face{
     font-family: 'NanumSquareR';
-    src: url(NanumSquareR.ttf) format('truetype');
+    src: url(font/NanumSquareR.ttf) format('truetype');
 }
 *{
     padding: 0;
@@ -19,35 +19,186 @@ a{
 hr{
     background: #000;
 }
+.five *{
+    color: #555;
+}
+.five *:hover{
+    color: #000;
+}
 
 /* 헤더 */
 header{
-    width: 100vw;
-    height: 8em;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background: rgba(255,255,255,0.5);
+    height: 260px;
+    background-color: #ffffff;
 }
-header> .header_top{
-    height: 5em;
-    border-bottom: 1px solid #555;
+header> section{
+    border-bottom: 1px solid #333;
+}
+section> div{
+    width: 1000px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
-h1{
-    width: 7em;
-    height: 100%;
+header .sns> a{
+    width: 40px;
+    height: 40px;
+    border-radius: 100px;
+    background-color: #F8E8CC;
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all 0.5s;
 }
-header> .header_top> h1> a{
-    width: 80%;
-    height: 80%;
+header .sns> a> i{
+    font-size: 1.5em;
+    color: #333;
+    transition: all 0.5s;
 }
-header> .header_top> h1> a> img{
+header .sns> a:hover{
+    background: #FFE1AC;
+}
+header .sns> a:hover> i{
+    color: #000;
+}
+
+/* -------섹션1 시작------- */
+
+/* 큰로고포함한섹션 */
+#header_sct1{
+    height: 170px;
+    position: relative;
+}
+
+/* 홍보동그라미칸 */
+#header_sct1> #hongbo{
+    width: 160px;
+    height: 160px;
+    background-color: #cccccc;
+    border-radius: 300px;
+}
+
+/* 로고div */
+#header_sct1> h1{
+    width: 30%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#header_sct1> h1 img{
     width: 100%;
+}
+
+/* 미니메뉴, sns 묶음 */
+.sct1-right{
+    width: 300px;
     height: 100%;
 }
 
+/* 미니 메뉴 */
+.sct1-right> .nav{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+/* 아이콘 */
+.sct1-right> .sns{
+    width: 150px;
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+    float: right;
+}
+
+
+/* -------섹션2 시작------- */
+
+/* section2 로고, sns */
+#header_sct2> .sct2_left{
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* 로고 */
+.sct2_left> h1{
+    width: 50%;
+}
+.sct2_left> h1 img{
+    width: 100%;
+}
+
+/* sns */
+.sct2_left> .sns{
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* 미니메뉴 */
+#header_sct2> .nav{
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* -------섹션3 시작------- */
+
+/* 섹션3 크기 */
+#header_sct3{
+    height: 50px;
+}
+
+/* 메뉴(햄버거)아이콘 */
+#header_sct3 .five *:hover{
+    color: #000;
+}
+#header_sct3> i{
+    font-size: 30px;
+    transition: all 0.5s;
+}
+#header_sct3> .nav{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#header_sct3> .nav> li{
+    position: relative;
+}
+#header_sct3> .nav> li> .img_div{
+    background: #ddd;
+    position: absolute;
+    top: 35px;
+    display: flex;
+    display: none;
+    border: 1px solid #555;
+    border-top: none;
+}
+#header_sct3 .nav li:nth-child(1) .img_div{
+    display: flex;
+}
+#header_sct3 .img_div> div{
+    width: 250px;
+    height: 180px;
+    padding: 10px;
+}
+#header_sct3 .img_div> div> p{
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+}
+#header_sct3 .img_div> div.idx1> p{
+    justify-content: flex-end;
+}
+#header_sct3 .img_div> div> img{
+    width: 230px;
+    height: 140px;
+}
