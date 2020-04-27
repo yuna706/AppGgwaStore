@@ -29,6 +29,7 @@ header{
 }
 header> section{
     border-bottom: 1px solid #333;
+    background: #fff;
 }
 section> div{
     width: 1000px;
@@ -115,6 +116,13 @@ header .sns> a:hover> i{
 
 
 /* -------섹션2 시작------- */
+header> section:nth-child(2){
+    display: none;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
 #header_sct2{
     height: 50px;
 }
