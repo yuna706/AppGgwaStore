@@ -1,0 +1,357 @@
+/* 주조색 #ffe3a9 보조색 #7b5a2d 강조색 #b20109 */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'NanumSquare', sans-serif;
+}
+ul, li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+hr{
+    background: #000;
+}
+.five *{
+    color: #555;
+}
+.five *:hover{
+    color: #000;
+}
+
+/* 헤더 */
+header{
+    height: 260px;
+    background-color: #ffffff;
+}
+header> section{
+    border-bottom: 1px solid #333;
+}
+section> div{
+    width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* sns */
+header .sns> a{
+    width: 40px;
+    height: 40px;
+    border-radius: 100px;
+    background-color: #FFEEE8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+}
+header .sns> a> i{
+    font-size: 1.5em;
+    color: #333;
+    transition: all 0.5s;
+}
+header .sns> a:hover{
+    background: #ffdcd1;
+}
+header .sns> a:hover> i{
+    color: #000;
+}
+
+/* -------섹션1 시작------- */
+
+/* 큰로고포함한섹션 */
+#header_sct1{
+    height: 170px;
+    position: relative;
+}
+
+/* 홍보동그라미칸 */
+#header_sct1> #hongbo{
+    width: 160px;
+    height: 160px;
+    background-color: #cccccc;
+    border-radius: 300px;
+}
+
+/* 로고div */
+#header_sct1> h1{
+    width: 30%;
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#header_sct1> h1 img{
+    width: 100%;
+}
+
+/* 미니메뉴, sns 묶음 */
+.sct1-right{
+    width: 300px;
+    height: 100%;
+}
+
+/* 미니 메뉴 */
+.sct1-right> .nav{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+/* 아이콘 */
+.sct1-right> .sns{
+    width: 150px;
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+    float: right;
+}
+
+
+/* -------섹션2 시작------- */
+#header_sct2{
+    height: 50px;
+}
+
+/* section2 로고, sns */
+#header_sct2> .sct2_left{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* 로고 */
+.sct2_left> h1{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.sct2_left> h1> a{
+    height: 90%;
+}
+
+.sct2_left> h1 img{
+    height: 100%;
+}
+
+/* sns */
+.sct2_left> .sns{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* 미니메뉴 */
+#header_sct2> .nav{
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* -------섹션3 시작------- */
+
+/* 섹션3 크기 */
+#header_sct3{
+    height: 50px;
+    position: relative;
+}
+.rote{
+    transform-origin: center top;
+    transform: rotateX(90deg);
+    opacity: 0;
+}
+.rote.on{
+    transform: rotateX(0);
+    opacity: 1;
+}
+
+/* 햄버거 메뉴 */
+/* 메뉴(햄버거)아이콘 */
+#header_sct3 .five *:hover{
+    color: #000;
+}
+#header_sct3 i{
+    font-size: 30px;
+    transition: all 0.5s;
+}
+
+/* 서브메뉴 */
+.sub{
+    position: absolute;
+    top: 50px;
+    left: 0;
+    background: rgba(255,255,255,0.8);
+    border: 1px solid #555;
+    padding: 10px;
+    transition: all 0.5s;
+}
+.sub> p{
+    font-weight: bold;
+    font-size: 20px;
+    height: 1.7em;
+}
+.sub> div{
+    display: flex;
+}
+
+/* 개별메뉴 */
+.sub> div> ul> li> p{
+    font-weight: bold;
+    font-size: 17px;
+    height: 1.5em;
+    border-bottom: 1px solid #fff;
+    transition: all 0.5s;
+}
+.sub> div> ul> li> a{
+    display: flex;
+    align-items: center;
+    width: 9em;
+    height: 1.7em;
+}
+.sub> div> ul:hover> li> p{
+    border-bottom: 1px solid #000;
+}
+/* 네비게이션 메뉴 */
+#header_sct3> .nav{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#header_sct3> .nav> li{
+    height: 100%;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+/* hover시 이미지 */
+#header_sct3> .nav> li> .img_div{
+    display: flex;
+    background: rgba(255, 255, 255, 0.8);
+    position: absolute;
+    top: 50px;
+    border: 1px solid #888;
+    transition: all 0.5s;
+}
+/* 두개 있을 때 */
+#header_sct3> .nav> li> .img_div.double{
+    left: -200px;
+}
+/* 한개 있을 때 */
+#header_sct3> .nav> li> .img_div.solo{
+    left: -70px;
+}
+#header_sct3 .img_div> div{
+    padding: 10px;
+}
+#header_sct3 .img_div> div> p{
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+#header_sct3 .img_div> div.idx1> p{
+    justify-content: flex-end;
+}
+#header_sct3 .img_div> div> a img{
+    width: 230px;
+    height: 140px;
+}
+
+/*회원가입 div*/
+.sign_up{
+    width: 600px;
+    height: 600px;
+    margin: 0 auto;
+    display: block;
+}
+/*회원가입 div 제목*/
+.sign_up> p{
+    padding-top: 45px;
+    padding-bottom: 20px;
+    font-size: 30px;
+    text-align: center;
+    font-weight: 600;
+    color: #333;
+}
+/*회원가입 div 제목 아래 줄(보더 아래 줄인가 너가 말한거 하려다가 갑자기 뭘 알아야한다는 생각에 머리아파서 그냥 안했어 미안합니다..*/
+.sign_up> div{
+    width: 380px;
+    height: 1px;
+    background-color: #333;
+    margin: 0 auto;
+    margin-top: 2px;
+}
+/*폼과 줄사이 공백*/
+.sign_up> form{
+    padding-top: 35px;
+}
+/*묶음1과 묶음2를 묶은div*/
+.sign_up> form> .all_muk{
+    width: 600px;
+    display: flex;
+    padding-right: 100px;
+}
+
+    /*-----묶음1-----*/
+/*묶음1 텍스트들 위아래 옆 공백*/
+.sign_up> form> .all_muk> .muk1{
+    padding-top: 17px;
+    padding-right: 10px;
+}
+/*묶음1 텍스트*/
+.sign_up> form> .all_muk> .muk1> p{
+    width: 100px;
+    height: 50px;
+    font-size: 25px;
+    color: #333;
+    text-align: right; 
+}
+
+    /*-----묶음2-----*/
+/*묶음2 텍스트넣는칸들 사이의 공백 */
+.sign_up> form> .all_muk> .muk2> p{
+    padding-top: 10px;
+}
+/* 묶음2의 박스들*/
+.sign_up> form> .all_muk> .muk2> p> input{
+    width: 380px;
+    height: 40px;
+    font-size: 18px;
+    border: #333 solid 1px;
+}
+/*회원가입 버튼*/
+.sign_up> form> .all_muk> .muk2> p> #button1{
+    width: 380px;
+    height: 55px;
+    border-radius: 10px;
+    background-color: #ff4c12;
+    font-size: 30px;
+    color: #ffffff;
+    font-weight: 600;
+}
+/*전화번호칸과 회원가입 버튼 사이의 공백*/
+.sign_up> form> .all_muk> .muk2> p:nth-child(5){
+    padding-top: 20px;
+}
+/* 학번, 전화번호칸에 위아래 화살표 들어가는거 없애는 속성 */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}

@@ -1,0 +1,57 @@
+/*로그인 div*/
+.sign_up{
+    width: 400px;
+    margin: 0 auto;
+    display: block;
+}
+/*로그인 div 제목*/
+.sign_up> p{
+    padding-top: 45px;
+    padding-bottom: 20px;
+    font-size: 30px;
+    text-align: center;
+    font-weight: 600;
+    color: #333;
+    border-bottom: 3px double #000;
+}
+.sign_up> form> input{
+    font-family: sans-serif;
+    width: 400px;
+    height: 40px;
+    margin-top: 10px;
+    padding-left: 10px;
+    font-size: 18px;
+    border: #333 solid 1px;
+}
+/*로그인 버튼*/
+.sign_up> form> #button1{
+    width: 400px;
+    height: 55px;
+    border-radius: 10px;
+    background-color: #ff4c12;
+    font-size: 30px;
+    color: #ffffff;
+    font-weight: 600;
+}
+/*회원가입 버튼*/
+.sign_up> form> a{
+    width: 400px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    border-radius: 10px;
+    background-color: #ffdcd1;
+    border: 1px solid #000;
+    font-size: 30px;
+    color: #333;
+    font-weight: 600;
+}
+
+/* 학번칸에 위아래 화살표 들어가는거 없애는 속성 */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
