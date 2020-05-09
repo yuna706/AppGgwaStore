@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>애꽈스토어</title>
+    <title>애꽈스토어 로그인</title>
     
     <!-- cdn -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
@@ -226,25 +226,25 @@
                 </div>
         </section>
     </header>
-    <section>
-        <div class="sign_up">
-            <p>로그인</p>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
-            <form action="#" method="POST">
-                    <input id="student_ID"
-                    type="number"
-                    name="mb_student_ID"
-                    placeholder="학번을 입력해 주세요">
-                    
-                    <input id="password"
-                    type="password"
-                    name="mb_password"
-                    minlength="8"
-                    placeholder="비밀번호를 입력해 주세요">
-                    
-                    <input id="button1" type="submit" value="로그인">
-                    <a href="#">회원가입</a>
-            </form>
-        </div>
+    <section class="login">
+        <p>로그인</p>
+        <form action="#" method="POST">
+                <input id="student_ID"
+                type="number"
+                name="mb_student_ID"
+                maxlength="5"
+                minlength="5"
+                placeholder="학번을 입력해 주세요">
+
+                <input id="password"
+                type="password"
+                name="mb_password"
+                minlength="8"
+                placeholder="비밀번호를 입력해 주세요">
+
+                <input id="button1" type="submit" value="로그인">
+                <a href="#">회원가입</a>
+        </form>
     </section>
 </body>
 </html>

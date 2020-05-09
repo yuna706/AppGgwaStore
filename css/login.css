@@ -1,11 +1,11 @@
 /*로그인 div*/
-.sign_up{
+.login{
     width: 400px;
     margin: 0 auto;
     display: block;
 }
 /*로그인 div 제목*/
-.sign_up> p{
+.login> p{
     padding-top: 45px;
     padding-bottom: 20px;
     font-size: 30px;
@@ -14,19 +14,19 @@
     color: #333;
     border-bottom: 3px double #000;
 }
-.sign_up> form> input{
+.login> form> input{
     font-family: sans-serif;
-    width: 400px;
+    width: 350px;
     height: 40px;
     margin-top: 10px;
     padding-left: 10px;
-    font-size: 18px;
+    font-size: 15px;
     border: #333 solid 1px;
 }
 /*로그인 버튼*/
-.sign_up> form> #button1{
-    width: 400px;
-    height: 55px;
+.login> form> #button1{
+    width: 350px;
+    height: 50px;
     border-radius: 10px;
     background-color: #ff4c12;
     font-size: 30px;
@@ -34,7 +34,7 @@
     font-weight: 600;
 }
 /*회원가입 버튼*/
-.sign_up> form> a{
+.login> form> a{
     width: 400px;
     height: 55px;
     display: flex;
