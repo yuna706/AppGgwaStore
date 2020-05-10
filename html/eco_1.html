@@ -228,62 +228,77 @@
         </section>
     </header>
 
-        <!--상품이미지, 상품제목, 옵션선택창 모음-->
+        <!--상품이미지, 설명, 선택창, 버튼 모음-->
         <section id="body_sct1">
             
-            <!--상품이미지 div-->
-            <img class="product_img" src="../img/상품이미지예시.png" alt="상품이미지">
+            <!--상품이미지-->
+            <div class="product_img">
+                <img src="../img/eco/ready.png" alt="상품이미지">
+            </div>
 
-            <!--상품제목 + 설명, 선택창들 모은 div-->
+            <!--설명, 선택창들 모은 div-->
             <div class="body_sct1_right">
 
                 <!--상품제목-->
                 <p>소장100% 에코백(예시)</p>
                 
-                <!--판매가, 배송비, 색상, 총 상품금액-->
-                <div class="body_sct1_right_left">
-                    <p>판매가</p>
-                    <p>배송비</p>
-                    <p>색상</p>
-                    <p>총 상품금액</p>
-                </div>
-
-                <!--원, 배송선택, 색상선택, 원-->
-                <div class="body_sct1_right_right">
-                <p>원</p>
-                <select name="baesong" id="baesong">
-                    <option value="">선택없음</option>
-                    <option value="2018">배송으로 수령받기(+2500원)</option>
-                    <option value="2019">학교에서 수령받기(+0원)</option>
-                </select>
-                <select name="color" id="color">
-                    <option value="">선택하기</option>
-                    <option value="2018">블랙</option>
-                    <option value="2019">화이트</option>
-                </select>
-                <p>원</p>
-
-                <!--버튼div-->
-                <div class="body_button">
-                    <!--하트 버튼-->
-                    <button>♡</button>
-
-                    <!--장바구니 버튼-->
-                    <button>장바구니</button>
+                <!--설명+선택창+버튼+카톡 모은 div-->
+                <div class="title_under">
                     
-                    <!--구매하기 버튼-->
-                    <button>구매하기</button>
+                    <!--설명+선택창 모은 div-->
+                    <div class="title_under1">
+                        
+                        <!--왼쪽-->
+                        <div class="title_under1_left">
+                            <p>판매가</p>
+                            <p>배송비</p>
+                            <p>색상</p>
+                            <p>총 상품금액</p>
+                        </div>
+
+                        <!--오른쪽-->
+                        <div class="title_under1_right">
+                            <p>원</p>
+                            <select name="baesong" id="baesong">
+                                <option value="">선택없음</option>
+                                <option value="">배송으로 수령받기(+2500원)</option>
+                                <option value="">학교에서 수령받기(+0원)</option>
+                            </select>
+                            <select name="color" id="color">
+                                <option value="">선택하기</option>
+                                <option value="">블랙</option>
+                                <option value="">화이트</option>
+                            </select>
+                            <p>원</p>
+                        </div>
+                    </div>
+                    
+                    <!--총 상품금액 div-->
+                    <div class="title_under2">
+                        <p>총 상품금액</p>
+                        <p>원</p>
+                    </div>
+
+                    <div class="title_under3">
+                        <!--하트 버튼-->
+                        <button>♡</button>
+
+                        <!--장바구니 버튼-->
+                        <button>장바구니</button>
+                        
+                        <!--구매하기 버튼-->
+                        <button>구매하기</button>
+                    </div>
+
+                    <!--카카오톡 상담 버튼-->
+                    <button class="title_under4">
+                        <a href="#">
+                            카카오톡으로 상담하기
+                            <!--<img src="../img/eco/kakaotalk.png" alt="카카오톡 이미지">-->
+                        </a>
+                    </button>
                 </div>
-
-                <!--구매하기 버튼 아래 줄-->
-
-                <!--카톡 버튼인데 카톡아이콘이 너무커서 잠시숨겨둠-->
-                <!--<div>
-                    <img src="../img/카카오톡.png" alt="카카오톡 아이콘">
-                    카톡으로 상담하기
-                </div>-->
             </div>
-        </div>
         </section>
 
         <!--상세보기 칸-->
