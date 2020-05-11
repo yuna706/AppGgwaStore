@@ -7,9 +7,6 @@
 }
 
 /*상품이미지*/
-#body_sct1> .product_img{
-    
-}
 #body_sct1> .product_img> img{
     border: 2px solid #000;
     padding-right: 10px;
@@ -26,12 +23,9 @@
 /*상품제목*/
 #body_sct1> .body_sct1_right> p{
     padding-top: 5px;
-    width: 400px;
-    height: 50px;
     line-height: 50px;
     font-size: 25px;
     text-align: left;
-    flex-grow: 0;
     border-bottom: #333 double;
     border-width: 4px 10px;
     font-weight: 600;
@@ -47,18 +41,66 @@
 }
 
 /*설명+선택창 모은 div*/
-#body_sct1> .body_sct1_right> .title_under1{
+#body_sct1> .body_sct1_right> .title_under> .title_under1{
     display: flex;
-    flex-grow: 4;
+    flex-grow: 3;
     justify-content: space-between;
+    align-items: center;
+
+}
+/*title_under1속 오른쪽 div*/
+#body_sct1> .body_sct1_right> .title_under> .title_under1> .title_under1_right{
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    padding: 10px 0px;
+}
+
+/*title_under1속 오른쪽 div속 버튼*/
+#body_sct1> .body_sct1_right> .title_under> .title_under1> .title_under1_right{
+    padding-bottom: 10px;
+}
+
+/*title_under1속 div속 p들*/
+#body_sct1> .body_sct1_right> .title_under{
+    font-size: 20px;
+
 
 }
 
-/*설명 div*/
-#body_sct1> .body_sct1_right> .title_under1_left{
+/*title_under1~3까지 플렉스 그로우 설정*/
+#body_sct1> .body_sct1_right> .title_under> div{
+    flex-grow: 1;
+    border-bottom: #333 solid;
+}
 
-    
-    
+/*title_under2 (총 상품금액+원) 모은 div*/
+#body_sct1> .body_sct1_right> .title_under> .title_under2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*title_under3 (하트, 장바구니, 구매하기 버튼) 모은 div*/
+#body_sct1> .body_sct1_right> .title_under> .title_under3{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#body_sct1> .body_sct1_right> .title_under> .title_under3> button{
+    padding: 15px 35px;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 700;
+}
+#body_sct1> .body_sct1_right> .title_under> .title_under3> button:nth-child(1){
+    padding: 15px 15px;
+    align-items: center;
+    justify-content: space-around;
+    background-color: ;
 }
 
 /*상세보기*/
