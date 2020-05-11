@@ -101,7 +101,7 @@
 }
 
 /*title_under3 (하트, 장바구니, 구매하기 버튼) 모은 div속 버튼*/
-#body_sct1> .body_sct1_right> .title_under> .title_under2> .title_under2_down> button{
+#body_sct1> .body_sct1_right> .title_under> .title_under2> .title_under2_down> a{
     padding: 10px 35px;
     align-items: center;
     justify-content: space-around;
@@ -113,7 +113,7 @@
 }
 
 /*title_under3 (하트, 장바구니, 구매하기 버튼) 모은 div속 버튼 첫번째*/
-#body_sct1> .body_sct1_right> .title_under> .title_under2> .title_under2_down> button:nth-child(1){
+#body_sct1> .body_sct1_right> .title_under> .title_under2> .title_under2_down> a:nth-child(1){
     padding: 10px 15px;
     align-items: center;
     justify-content: space-around;
@@ -121,12 +121,12 @@
 }
 
 /*title_under3 (하트, 장바구니, 구매하기 버튼) 모은 div속 버튼 두번째*/
-#body_sct1> .body_sct1_right> .title_under> .title_under2> .title_under2_down> button:nth-child(2){
+#body_sct1> .body_sct1_right> .title_under> .title_under2> .title_under2_down> a:nth-child(2){
     background-color: #ffdcd1;
 }
 
 /*title_under3 (하트, 장바구니, 구매하기 버튼) 모은 div속 버튼 세번째*/
-#body_sct1> .body_sct1_right> .title_under> .title_under2> .title_under2_down> button:nth-child(3){
+#body_sct1> .body_sct1_right> .title_under> .title_under2> .title_under2_down> a:nth-child(3){
     background-color: #ff4c12;
     color: #ffffff;
 }
@@ -141,12 +141,6 @@
 #body_sct1> .body_sct1_right> .title_under> .title_under3> a{
     width: 400px;
     height: 50px;
-}
-
-/*title_under3 카카오톡 버튼*/
-#body_sct1> .body_sct1_right> .title_under> .title_under3> a> button{
-    width: 400px;
-    height: 50px;
     border-radius: 10px;
     background-color: #ffeb3b;
     border: #333 solid 1px;
@@ -154,19 +148,18 @@
     font-weight: 800;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 /*title_under3 카카오톡 버튼 속 카카오톡 아이콘*/
-#body_sct1> .body_sct1_right> .title_under> .title_under3> a> button> p{
-    padding-top: 5px;
+#body_sct1> .body_sct1_right> .title_under> .title_under3> a> p{
     padding-left: 5px;
 }
 
 /*title_under3 카카오톡 버튼 속 카카오톡 아이콘*/
-#body_sct1> .body_sct1_right> .title_under> .title_under3> a> button> img{
+#body_sct1> .body_sct1_right> .title_under> .title_under3> a> img{
     width: 30px;
     height: 30px;
-    align-items: center;
 }
 
 /*상세보기*/
