@@ -15,7 +15,6 @@
 /*상품이미지 옆 상품설명칸*/
 #body_sct1> .body_sct1_right{
     width: 600px;
-    border: 2px solid #000;
     display: block;
     flex-direction: column;
 }
@@ -24,83 +23,150 @@
 #body_sct1> .body_sct1_right> p{
     padding-top: 5px;
     line-height: 50px;
-    font-size: 25px;
+    font-size: 30px;
     text-align: left;
     border-bottom: #333 double;
     border-width: 4px 10px;
-    font-weight: 600;
+    font-weight: 900;
 }
 
-/*설명+선택창+버튼+카톡 모은 div*/
+/*title_under1 (설명+선택창+버튼+카톡) 모은 div*/
 #body_sct1> .body_sct1_right> .title_under{
     width: 400px;
-    height: 400px;
+    height: 450px;
     display: flex;
     flex-direction: column;
     
 }
 
-/*설명+선택창 모은 div*/
+/*title_under1속 div속 자식들 텍스트크기 설정*/
+#body_sct1> .body_sct1_right> .title_under{
+    font-size: 20px;
+}
+
+/*title_under1속 (설명+선택창) 모은 div*/
 #body_sct1> .body_sct1_right> .title_under> .title_under1{
     display: flex;
     flex-grow: 3;
     justify-content: space-between;
-    align-items: center;
-
 }
-/*title_under1속 오른쪽 div*/
-#body_sct1> .body_sct1_right> .title_under> .title_under1> .title_under1_right{
+
+/*title_under1속 div*/
+#body_sct1> .body_sct1_right> .title_under> .title_under1> div{
     display: flex;
     flex-direction: column;
-    text-align: right;
-    padding: 10px 0px;
+    justify-content: space-around;
+    font-weight: 600;
+    color: #333;
 }
 
-/*title_under1속 오른쪽 div속 버튼*/
+/*title_under1속 오른쪽 div*/
 #body_sct1> .body_sct1_right> .title_under> .title_under1> .title_under1_right{
-    padding-bottom: 10px;
+    text-align: right;
 }
 
-/*title_under1속 div속 p들*/
-#body_sct1> .body_sct1_right> .title_under{
-    font-size: 20px;
-
-
+/*title_under1속 오른쪽 div속 셀렉트박스*/
+#body_sct1> .body_sct1_right> .title_under> .title_under1> .title_under1_right> select{
+    font-family: sans-serif;
+    font-weight: 600;
+    color: #333;
 }
 
-/*title_under1~3까지 플렉스 그로우 설정*/
+/*title_under1~3까지 플렉스 그로우 설정 및 title_under속 줄들 설정*/
 #body_sct1> .body_sct1_right> .title_under> div{
     flex-grow: 1;
-    border-bottom: #333 solid;
+    border-bottom: #333 solid 1px;
 }
 
-/*title_under2 (총 상품금액+원) 모은 div*/
 #body_sct1> .body_sct1_right> .title_under> .title_under2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-grow: 1;
+}
+
+/*title_under2_up (총 상품금액+원) 모은 div*/
+#body_sct1> .body_sct1_right> .title_under> .title_under2> .title_under2_up{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 600; 
+}
+
+/*title_under2_down (하트, 장바구니, 구매하기 버튼) 모은 div*/
+#body_sct1> .body_sct1_right> .title_under> .title_under2> .title_under2_down{
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-/*title_under3 (하트, 장바구니, 구매하기 버튼) 모은 div*/
-#body_sct1> .body_sct1_right> .title_under> .title_under3{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-
-#body_sct1> .body_sct1_right> .title_under> .title_under3> button{
-    padding: 15px 35px;
+/*title_under3 (하트, 장바구니, 구매하기 버튼) 모은 div속 버튼*/
+#body_sct1> .body_sct1_right> .title_under> .title_under2> .title_under2_down> button{
+    padding: 10px 35px;
     align-items: center;
     justify-content: space-around;
     border-radius: 10px;
-    font-size: 20px;
-    font-weight: 700;
+    font-size: 25px;
+    font-weight: 800;
+    border: #333 solid 1px;
+    color: #333;
 }
-#body_sct1> .body_sct1_right> .title_under> .title_under3> button:nth-child(1){
-    padding: 15px 15px;
+
+/*title_under3 (하트, 장바구니, 구매하기 버튼) 모은 div속 버튼 첫번째*/
+#body_sct1> .body_sct1_right> .title_under> .title_under2> .title_under2_down> button:nth-child(1){
+    padding: 10px 15px;
     align-items: center;
     justify-content: space-around;
-    background-color: ;
+    background-color: #ffffff;
+}
+
+/*title_under3 (하트, 장바구니, 구매하기 버튼) 모은 div속 버튼 두번째*/
+#body_sct1> .body_sct1_right> .title_under> .title_under2> .title_under2_down> button:nth-child(2){
+    background-color: #ffdcd1;
+}
+
+/*title_under3 (하트, 장바구니, 구매하기 버튼) 모은 div속 버튼 세번째*/
+#body_sct1> .body_sct1_right> .title_under> .title_under2> .title_under2_down> button:nth-child(3){
+    background-color: #ff4c12;
+    color: #ffffff;
+}
+
+/*title_under3 카카오톡 버튼위 공백*/
+#body_sct1> .body_sct1_right> .title_under> .title_under3{
+    padding-top: 15px;
+    border-bottom: none;
+}
+
+/*title_under3 카카오톡 버튼*/
+#body_sct1> .body_sct1_right> .title_under> .title_under3> a{
+    width: 400px;
+    height: 50px;
+}
+
+/*title_under3 카카오톡 버튼*/
+#body_sct1> .body_sct1_right> .title_under> .title_under3> a> button{
+    width: 400px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #ffeb3b;
+    border: #333 solid 1px;
+    font-size: 20px;
+    font-weight: 800;
+    display: flex;
+    justify-content: center;
+}
+
+/*title_under3 카카오톡 버튼 속 카카오톡 아이콘*/
+#body_sct1> .body_sct1_right> .title_under> .title_under3> a> button> p{
+    padding-top: 5px;
+    padding-left: 5px;
+}
+
+/*title_under3 카카오톡 버튼 속 카카오톡 아이콘*/
+#body_sct1> .body_sct1_right> .title_under> .title_under3> a> button> img{
+    width: 30px;
+    height: 30px;
+    align-items: center;
 }
 
 /*상세보기*/
@@ -108,11 +174,11 @@
     width: 1000px;
     margin: 0 auto;
     padding-top: 100px;
-    display: flex;
+    display: block
 }
 #body_sct2> .body_sct2_zul1{
     width: 250px;
-    height: 2px;
+    height: 1px;
     background-color: #333;
     float: left;
 
