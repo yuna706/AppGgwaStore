@@ -1,3 +1,7 @@
+*{
+  font-family: 'NanumSquare', sans-serif;
+}
+
 header{
     height: 222px;
 }
@@ -65,41 +69,73 @@ header{
     top: 0;
   }
   
-  /* The dots/bullets/indicators */
-  .dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
+  /*애꽈스토어 제목, 패널 모은 div*/
+  #panel_box_store{
+    width: 1000px;
+    height: 770px;
+    background-color: ;
+    margin: 0 auto;
   }
-  
-  .active, .dot:hover {
-    background-color: #717171;
+
+  /*애꽈스토어 제목*/
+  #panel_box_store> p{
+    padding-top: 40px;
+    font-size: 40px;
+    color: #333;
+    padding-bottom: 30px;
+    margin-bottom: 50px;
+    border-bottom: #333 solid 1px;
+    font-weight: 600;
   }
-  
-  /* Fading animation */
-  .fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
-    animation-name: fade;
-    animation-duration: 1.5s;
+
+  /*애꽈스토어 패널들 플렉스 설정*/
+  #panel_box_store> div{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
   }
-  
-  @-webkit-keyframes fade {
-    from {opacity: .4} 
-    to {opacity: 1}
+
+  /*애꽈스토어 패널들 크기값 설정 *참고 : 가로값 300하면 이상하게보여서 1px추가함ㅠㅠ */
+  #panel_box_store> div> div{
+    width: 301px;
+    height: 500px;
+    background-color: #ffffff;
+    border-radius: 0px 0px 10px 10px;
+    border: #333 solid 1px;
+    box-shadow: #333 5px 5px 5px -5px;
   }
-  
-  @keyframes fade {
-    from {opacity: .4} 
-    to {opacity: 1}
+
+  /*패널 속 상품이미지div*/
+  #panel_box_store> div> div> .panel_img{
+    width: 300px;
+    height: 300px;
+    background-color: #CCCCCC;
+    border-bottom: #333 solid 1px;
+    border-right: #333 solid 1px;
+    text-align: center;
+    align-items: center;
   }
-  
-  /* On smaller screens, decrease text size */
-  @media only screen and (max-width: 300px) {
-    .prev, .next,.text {font-size: 11px}
+
+  /*패널 속 (상품명, 원) 포함한 div */
+  #panel_box_store> div> div> .panel_more> .panel_more1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px;
+    color: #333;
+  }
+
+  /*(상품명, 원) 포함한 div 속 p들 크기설정*/
+  #panel_box_store> div> div> .panel_more> .panel_more1> p:nth-child(1){
+    font-size: 25px;
+    font-weight: 600;
+  }
+
+  #panel_box_store> div> div> .panel_more> .panel_more1> p:nth-child(2){
+    font-size: 20px;
+  }
+
+  #panel_box_store> div> div> .panel_more> .panel_more2{
+    font-size: 15px;
+    padding: 0px 10px;
   }
