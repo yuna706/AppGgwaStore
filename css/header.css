@@ -193,6 +193,11 @@ header> section:nth-child(2){
     font-size: 30px;
     transition: all 0.5s;
 }
+#header_sct3> .ham{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
 
 /* 서브메뉴 */
 .sub{
