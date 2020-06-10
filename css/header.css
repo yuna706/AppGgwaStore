@@ -24,7 +24,7 @@ hr{
 
 /* 헤더 */
 header{
-    height: 260px;
+    height: 222px;
     background-color: #ffffff;
 }
 header> section{
@@ -193,6 +193,11 @@ header> section:nth-child(2){
     font-size: 30px;
     transition: all 0.5s;
 }
+#header_sct3> .ham{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
 
 /* 서브메뉴 */
 .sub{
@@ -208,9 +213,13 @@ header> section:nth-child(2){
     font-weight: bold;
     font-size: 20px;
     height: 1.7em;
+    color: #000;
 }
 .sub> div{
     display: flex;
+}
+.sub> div:hover p{
+    color: #000;
 }
 
 /* 개별메뉴 */
@@ -218,7 +227,7 @@ header> section:nth-child(2){
     font-weight: bold;
     font-size: 17px;
     height: 1.5em;
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid #aaa;
     transition: all 0.5s;
 }
 .sub> div> ul> li> a{
@@ -248,6 +257,12 @@ header> section:nth-child(2){
 }
 
 /* hover시 이미지 */
+#header_sct3> .nav> li:hover a{
+    color: #000;
+}
+#header_sct3> .nav> li> .img_div> div:hover> p{
+    color: #000;
+}
 #header_sct3> .nav> li> .img_div{
     display: flex;
     background: rgba(255, 255, 255, 0.8);
